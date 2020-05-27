@@ -6,9 +6,9 @@ formulaInput.addEventListener("keyup", function (e) {
 });
 
 function calculate() {
-  var fm = formulaInput.value;
-  var formulaRegex = /^\d+(.\d+)?[+\-*/]{1}\d+(.\d+)?$/;
-  var formulaValid = formulaRegex.test(fm);
+  const fm = formulaInput.value;
+  const formulaRegex = /^\d+(.\d+)?[+\-*/]{1}\d+(.\d+)?$/;
+  const formulaValid = formulaRegex.test(fm);
 
   var resultText = "ERROR";
   if (formulaValid) {
